@@ -1,0 +1,57 @@
+/* Simple UI for Auth page with black background theme. No functionality changes. */
+
+/* Page background for Auth */
+body {
+  background: #000000;
+}
+
+.auth-container {
+  max-width: 420px;
+  margin: 64px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  color: #1f2937;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.auth-container h2 {
+  margin: 8px 0 10px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.auth-container form {
+  margin-bottom: 18px;
+}
+
+.auth-container input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin: 6px 0 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  background: #f9fafb;
+}
+
+.auth-container input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+
+.auth-container button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.05s ease;
+}
+
+.auth-container button:hover { background: #1d4ed8; }
+.auth-container button:active { transform: translateY(1px); }

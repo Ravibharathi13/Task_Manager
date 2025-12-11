@@ -1,0 +1,106 @@
+/* Simple scoped UI styles for Dashboard without altering functionality */
+
+/* Page background for Dashboard */
+body {
+  background: #000000;
+}
+
+.dashboard {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  color: #1f2937;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.dashboard h2 {
+  margin: 0 0 16px;
+  font-size: 28px;
+}
+
+.dashboard h3 {
+  margin: 28px 0 12px;
+  font-size: 18px;
+  color: #374151;
+}
+
+.dashboard button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.05s ease;
+}
+
+.dashboard button:hover { background: #1d4ed8; }
+.dashboard button:active { transform: translateY(1px); }
+
+.dashboard input,
+.dashboard select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin: 6px 0 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  background: #f9fafb;
+}
+
+.dashboard input:focus,
+.dashboard select:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* Category list items and task list items share base styling */
+.dashboard li {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Make clickable list items show hover when used for categories */
+.dashboard li[style*="cursor: 'pointer'"] {
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.dashboard li[style*="cursor: 'pointer'"]:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+/* Task line actions */
+.dashboard li button {
+  margin-left: 8px;
+  padding: 8px 12px;
+}
+
+/* Separate action rows from inputs */
+.dashboard .actions-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* Space around add buttons */
+.dashboard .add-button {
+  margin: 8px 0 0;
+}
